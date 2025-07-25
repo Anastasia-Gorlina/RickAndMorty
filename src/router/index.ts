@@ -23,20 +23,20 @@ const router = createRouter({
       },
       props: true
     },
-    {
-      path: '/:pathMatch(.*)*',
-      name: 'not-found',
-      component: NotFoundView,
-      meta: {
-        title: 'Page Not Found'
-      }
-    }
+    // {
+    //   path: '/:pathMatch(.*)*',
+    //   name: 'not-found',
+    //   component: NotFoundView,
+    //   meta: {
+    //     title: 'Page Not Found'
+    //   }
+    // }
   ]
 })
 
 router.beforeEach((to, from, next) => {
   const title = to.meta.title as string || 'Rick and Morty'
-  document.title = `${title} | Rick and Morty`
+  document.title = `${title}`
   next()
 })
 

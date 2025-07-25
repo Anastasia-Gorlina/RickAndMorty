@@ -8506,7 +8506,7 @@ function useRouter() {
 function useRoute(_name) {
   return inject(routeLocationKey);
 }
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "App",
   setup(__props) {
     return (_ctx, _cache) => {
@@ -10996,11 +10996,11 @@ const useEpisodeStore = /* @__PURE__ */ defineStore("episode", () => {
     getCharacterById
   };
 });
-const _hoisted_1$4 = { class: "episode-title" };
+const _hoisted_1$3 = { class: "episode-title" };
 const _hoisted_2$3 = { class: "episode-meta" };
 const _hoisted_3$3 = { class: "episode-number" };
 const _hoisted_4$3 = { class: "episode-date" };
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "EpisodeCard",
   props: {
     episode: {}
@@ -11015,7 +11015,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
         class: "episode-card",
         onClick: _cache[0] || (_cache[0] = ($event) => navigateToEpisode(_ctx.episode.id))
       }, [
-        createBaseVNode("h3", _hoisted_1$4, toDisplayString(_ctx.episode.name), 1),
+        createBaseVNode("h3", _hoisted_1$3, toDisplayString(_ctx.episode.name), 1),
         createBaseVNode("div", _hoisted_2$3, [
           createBaseVNode("span", _hoisted_3$3, toDisplayString(_ctx.episode.episode), 1),
           createBaseVNode("span", _hoisted_4$3, toDisplayString(_ctx.episode.air_date), 1)
@@ -11031,8 +11031,8 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const EpisodeCard = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-e41cb64e"]]);
-const _hoisted_1$3 = { class: "episodes-page" };
+const EpisodeCard = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e41cb64e"]]);
+const _hoisted_1$2 = { class: "episodes-page" };
 const _hoisted_2$2 = { class: "header" };
 const _hoisted_3$2 = {
   key: 0,
@@ -11046,7 +11046,7 @@ const _hoisted_5$2 = {
   key: 2,
   class: "episodes-grid"
 };
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "EpisodesView",
   setup(__props) {
     const episodeStore = useEpisodeStore();
@@ -11054,7 +11054,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       episodeStore.fetchAllEpisodes();
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, [
+      return openBlock(), createElementBlock("div", _hoisted_1$2, [
         createBaseVNode("header", _hoisted_2$2, [
           _cache[1] || (_cache[1] = createBaseVNode("img", { src: _imports_0 }, null, -1)),
           withDirectives(createBaseVNode("input", {
@@ -11078,22 +11078,22 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const EpisodesView = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1602dc28"]]);
-const _hoisted_1$2 = { class: "character-card" };
+const EpisodesView = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-1602dc28"]]);
+const _hoisted_1$1 = { class: "character-card" };
 const _hoisted_2$1 = ["src", "alt"];
 const _hoisted_3$1 = { class: "character-info" };
 const _hoisted_4$1 = { class: "character-name" };
 const _hoisted_5$1 = { class: "character-meta" };
 const _hoisted_6$1 = { class: "character-species" };
 const _hoisted_7$1 = { class: "character-gender" };
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "CharacterCard",
   props: {
     character: {}
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("article", _hoisted_1$2, [
+      return openBlock(), createElementBlock("article", _hoisted_1$1, [
         createBaseVNode("img", {
           src: _ctx.character.image,
           alt: _ctx.character.name,
@@ -11113,7 +11113,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const CharacterCard = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-01c0451f"]]);
+const CharacterCard = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-01c0451f"]]);
 function isObject$2(obj) {
   return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
 }
@@ -17414,7 +17414,7 @@ function freeMode(_ref) {
     }
   });
 }
-const _hoisted_1$1 = { class: "episode-detail" };
+const _hoisted_1 = { class: "episode-detail" };
 const _hoisted_2 = {
   key: 0,
   class: "loading"
@@ -17438,7 +17438,7 @@ const _hoisted_12 = {
   key: 1,
   class: "characters-container"
 };
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "EpisodeDetailView",
   setup(__props) {
     const route = useRoute();
@@ -17495,7 +17495,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       const _component_router_link = resolveComponent("router-link");
-      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+      return openBlock(), createElementBlock("div", _hoisted_1, [
         createVNode(_component_router_link, {
           to: "/",
           class: "back-link"
@@ -17569,24 +17569,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const EpisodeDetailView = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-cfd47a26"]]);
-const _sfc_main = {};
-const _hoisted_1 = { class: "not-found" };
-function _sfc_render(_ctx, _cache) {
-  const _component_router_link = resolveComponent("router-link");
-  return openBlock(), createElementBlock("div", _hoisted_1, [
-    _cache[1] || (_cache[1] = createBaseVNode("h1", null, "404 - Page Not Found", -1)),
-    _cache[2] || (_cache[2] = createBaseVNode("p", null, "The page you're looking for doesn't exist.", -1)),
-    createVNode(_component_router_link, { to: "/" }, {
-      default: withCtx(() => _cache[0] || (_cache[0] = [
-        createTextVNode("Go to Episodes", -1)
-      ])),
-      _: 1,
-      __: [0]
-    })
-  ]);
-}
-const NotFoundView = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-f6f290cb"]]);
+const EpisodeDetailView = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-cfd47a26"]]);
 const router = createRouter({
   history: createWebHistory("./"),
   routes: [
@@ -17606,23 +17589,23 @@ const router = createRouter({
         title: "Episode Details"
       },
       props: true
-    },
-    {
-      path: "/:pathMatch(.*)*",
-      name: "not-found",
-      component: NotFoundView,
-      meta: {
-        title: "Page Not Found"
-      }
     }
+    // {
+    //   path: '/:pathMatch(.*)*',
+    //   name: 'not-found',
+    //   component: NotFoundView,
+    //   meta: {
+    //     title: 'Page Not Found'
+    //   }
+    // }
   ]
 });
 router.beforeEach((to, from, next) => {
   const title = to.meta.title || "Rick and Morty";
-  document.title = `${title} | Rick and Morty`;
+  document.title = `${title}`;
   next();
 });
-const app = createApp(_sfc_main$5);
+const app = createApp(_sfc_main$4);
 app.use(createPinia());
 app.use(router);
 app.mount("#app");
