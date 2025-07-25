@@ -17497,7 +17497,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       const _component_router_link = resolveComponent("router-link");
       return openBlock(), createElementBlock("div", _hoisted_1, [
         createVNode(_component_router_link, {
-          to: "/RickAndMorty",
+          to: "/",
           class: "back-link"
         }, {
           default: withCtx(() => _cache[0] || (_cache[0] = [
@@ -17569,12 +17569,12 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const EpisodeDetailView = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-d2e94984"]]);
+const EpisodeDetailView = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-cfd47a26"]]);
 const router = createRouter({
   history: createWebHistory("./"),
   routes: [
     {
-      path: "/RickAndMorty",
+      path: "/",
       name: "episodes",
       component: EpisodesView,
       meta: {
