@@ -787,6 +787,19 @@ button.swiper-pagination-bullet {
   .characters-container[data-v-cfd47a26] .swiper-button-next {
     display: none;
 }
+}.not-found[data-v-f6f290cb] {
+  text-align: center;
+  padding: 50px;
+}
+.not-found h1[data-v-f6f290cb] {
+  color: #ff4444;
+}
+.not-found a[data-v-f6f290cb] {
+  color: #42b983;
+  text-decoration: none;
+}
+.not-found a[data-v-f6f290cb]:hover {
+  text-decoration: underline;
 }* {
   margin: 0;
   padding: 0;
