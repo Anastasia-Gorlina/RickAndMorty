@@ -17577,7 +17577,7 @@ function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("div", _hoisted_1, [
     _cache[1] || (_cache[1] = createBaseVNode("h1", null, "404 - Page Not Found", -1)),
     _cache[2] || (_cache[2] = createBaseVNode("p", null, "The page you're looking for doesn't exist.", -1)),
-    createVNode(_component_router_link, { to: "/RickAndMorty" }, {
+    createVNode(_component_router_link, { to: "/" }, {
       default: withCtx(() => _cache[0] || (_cache[0] = [
         createTextVNode("Go to Episodes", -1)
       ])),
@@ -17586,7 +17586,7 @@ function _sfc_render(_ctx, _cache) {
     })
   ]);
 }
-const NotFoundView = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-9ccc76ee"]]);
+const NotFoundView = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-f6f290cb"]]);
 const router = createRouter({
   history: createWebHistory("./"),
   routes: [
