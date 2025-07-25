@@ -23,14 +23,14 @@ const router = createRouter({
       },
       props: true
     },
-    {
-      path: '/:pathMatch(.*)*',
-      name: 'not-found',
-      component: NotFoundView,
-      meta: {
-        title: 'Page Not Found'
-      }
-    }
+    // {
+    //   path: '/:pathMatch(.*)*',
+    //   name: 'not-found',
+    //   component: NotFoundView,
+    //   meta: {
+    //     title: 'Page Not Found'
+    //   }
+    // }
   ]
 })
 
