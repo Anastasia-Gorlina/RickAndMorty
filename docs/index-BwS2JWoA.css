@@ -787,18 +787,18 @@ button.swiper-pagination-bullet {
   .characters-container[data-v-cfd47a26] .swiper-button-next {
     display: none;
 }
-}.not-found[data-v-f6f290cb] {
+}.not-found[data-v-9ccc76ee] {
   text-align: center;
   padding: 50px;
 }
-.not-found h1[data-v-f6f290cb] {
+.not-found h1[data-v-9ccc76ee] {
   color: #ff4444;
 }
-.not-found a[data-v-f6f290cb] {
+.not-found a[data-v-9ccc76ee] {
   color: #42b983;
   text-decoration: none;
 }
-.not-found a[data-v-f6f290cb]:hover {
+.not-found a[data-v-9ccc76ee]:hover {
   text-decoration: underline;
 }* {
   margin: 0;
