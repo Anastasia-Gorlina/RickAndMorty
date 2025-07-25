@@ -8514,7 +8514,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _imports_0 = "/logo-Dq3xrxr1.webp";
+const _imports_0 = "" + new URL("logo-Dq3xrxr1.webp", import.meta.url).href;
 function bind(fn, thisArg) {
   return function wrap() {
     return fn.apply(thisArg, arguments);
@@ -17588,7 +17588,7 @@ function _sfc_render(_ctx, _cache) {
 }
 const NotFoundView = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-f6f290cb"]]);
 const router = createRouter({
-  history: createWebHistory("/"),
+  history: createWebHistory("./"),
   routes: [
     {
       path: "/",
